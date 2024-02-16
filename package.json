@@ -2,7 +2,6 @@
   "name": "ci-cd-ynov",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://spritrl.github.io/ci-cd-ynov/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
@@ -17,10 +16,9 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "coverage": "react-scripts test --coverage --watchAll",
-    "test": "react-scripts test",
+    "test": "react-scripts test --coverage --watchAll=false --collectCoverageFrom=!src/reportWebVitals.js --collectCoverageFrom=!src/index.js --collectCoverageFrom=!src/logo.svg",
     "eject": "react-scripts eject",
-    "jsdoc": "jsdoc -c ./jsdoc.config.json -r -d ./docs",
+    "jsdoc": "jsdoc -R ./README.md -c ./jsdoc.config.json -r -d ./public/docs",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
