@@ -1,6 +1,6 @@
 name: Build, Test and Deploy React Application
 
-# Controls when the action will run. 
+# Controls when the action will run. 2
 on:
   # Triggers the workflow on push or pull request events but only for the main branch
   push:
