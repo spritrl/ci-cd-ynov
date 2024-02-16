@@ -1,25 +1,25 @@
-{
   "name": "ci-cd-ynov",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://loise.github.io/ci-cd-ynov/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^14.5.2",
+    "gh-pages": "^6.1.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.21.3",
     "react-scripts": "5.0.1",
-    "react-toastify": "^10.0.4",
+    "react-toastify": "^7.0.4",
     "web-vitals": "^2.1.4"
   },
+  "homepage": "https://md-va.github.io/ci-cd-ynov/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
     "coverage": "react-scripts test --coverage --watchAll",
+    "test": "react-scripts test  --coverage --collectCoverageFrom=src/*/js --collectCoverageFrom=!src/reportWebVitals.js --collectCoverageFrom=!src/index.js src/",
+    "eject": "react-scripts eject",
     "jsdoc": "jsdoc -c ./jsdoc.config.json -r -d ./docs",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
@@ -44,7 +44,6 @@
   },
   "devDependencies": {
     "@babel/preset-env": "^7.23.9",
-    "gh-pages": "^6.1.1",
     "jsdoc": "^4.0.2",
     "react-test-renderer": "^18.2.0"
   }
