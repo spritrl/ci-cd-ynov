@@ -1,6 +1,8 @@
+{
   "name": "ci-cd-ynov",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://spritrl.github.io/ci-cd-ynov/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
@@ -12,7 +14,6 @@
     "react-toastify": "^10.0.4",
     "web-vitals": "^2.1.4"
   },
-  "homepage": "https://spritrl.github.io/ci-cd-ynov/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -47,3 +48,4 @@
     "jsdoc": "^4.0.2",
     "react-test-renderer": "^18.2.0"
   }
+}
